@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #all {
+            background-color: white;
+            padding-top: 30px;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #nav-bar {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #logo-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        #form {
+            font-size: 30px;
+            text-align: center;
+            color: snow;
+            background-color: black;
+        }
+
+
+        .nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            font-size: 20px;
+        }
+        #video-blog {
+            display: flex;
+            padding-left: 2%;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        #details{width:38%;}
+        #video{width:62%;}
+        
+        @media screen and (max-width: 1000px) {
+            #details{width:100%;}
+            #video{width: 100%;}
+        }
+        
+        #spec {
+            padding-left: 2%;
+        }
+
+        #header-img {
+            width: 40px;
+            height: 40px
+        }
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 22px;
+        }
+        input {
+            font-size: 22px;
+        }
+        #booking {
+            font-size: 30px;
+        }
+
+    </style>
+    <div id="all">
+        <header id="header">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-brand" href="#"><img id="logo-img"
+                                src="https://www.renderhub.com/firdz3d/mercedes-benz-logo/mercedes-benz-logo.jpg"
+                                alt="mercedes-benz-logo"></a></li>
+                    <li><a class="nav-link" href="#spec">Specifications</a></li>
+                    <li><a class="nav-link" href="#details">Details</a></li>
+                    <li><a class="nav-link" href="#video">Video</a></li>
+                    <li><a class="nav-link" href="#form">Test Drive</a></li>
+                </ul>
+            </nav>
+
+            <h1 id="title"> <img id="header-img"
+                    src="https://www.renderhub.com/firdz3d/mercedes-benz-logo/mercedes-benz-logo.jpg"
+                    alt="mercedes-benz-logo"> Mercedes-Benz</h1>
+
+        </header>
+        <p id=spec><strong>Specifications</strong><br><br> The Mercedes-Benz S-Class has 1 Diesel Engine and 3 Petrol Engine on offer. The Diesel engine is 2925 cc while the Petrol engine is 2996 cc and 3982 cc and 5980 cc . It is available with the Automatic transmission. Depending upon the variant and fuel type the S-Class has a mileage of . The S-Class is a 4 seater and has length of 5462 mm, width of 2130 mm and a wheelbase of 3365 mm.</p>
+        
+        <div id="video-blog">
+            <p id="details"><strong>Development and launch</strong> <br><br> The W223 S-Class is based on the second-generation modular MRA platform and uses a four-link front suspension and multi-link independent rear suspension. Air suspension is standard and can automatically lower by 20 mm (0.79 in) at 160 km/h (99 mph) to increase stability. <br>
+            Compared to the previous generation W222 S-Class, rear headroom has increased by 16 mm (0.63 in) and rear legroom has increased by 41 mm (1.6 in). Boot capacity has increased by 20 litres (0.71 cu ft) to 550 litres (19 cu ft). The W223 directs heat from the engine to the wheel arches and underbody to improve airflow and has a drag coefficient of 0.22 Cd. <br>
+            All models at launch except S 350 d are offered exclusively with 4MATIC all-wheel drive. The models with six-cylinder inline petrol engines have a 48V electrical system to provide additional power when needed. This also provided the power for the air conditioning system and for recharging the battery. It is also used as a starter motor in lieu of a separate and dedicated starter motor.</p>
+            <video width="995px" height="560px" id="video" controls>
+                <source src="/Mercedes-S-Class.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br><br>
+        <form id="form">
+            <p id="booking">For booking a test drive of Mercedes-Benz-S-Class</p>
+            <label for="text">Enter your name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"  placeholder="Enter Your email">
+            <input type="button" id="submit" value="Submit" onclick="alert('Your request for test drive is accepted.')">
+            
+        </form>
+    </div>
+</body>
+
+</html>
